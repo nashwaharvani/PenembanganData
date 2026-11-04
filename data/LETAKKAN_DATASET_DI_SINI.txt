@@ -1,0 +1,8 @@
+Unduh dataset dari Kaggle (perlu akun gratis):
+https://www.kaggle.com/datasets/hopesb/student-depression-dataset
+
+Simpan file CSV-nya dengan nama:
+    student_depression_dataset.csv
+di folder ini (data/).
+
+Kalau nama file berbeda, ubah DATA_PATH di sel "0. Pengaturan" pada notebook.

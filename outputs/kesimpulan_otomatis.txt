@@ -1,0 +1,7 @@
+1) Kinerja Decision Tree: baseline S1 mencapai akurasi 0.943 (F1 0.882). Setelah tuning dan pruning (S2) akurasi menjadi 0.978 (F1 0.954). Selisih akurasi latih-uji turun dari 0.057 (S1) menjadi -0.008 (S2), menandakan pruning mengurangi overfitting.
+
+2) Pengaruh variabel dominan ('health_condition'): tanpa variabel ini (S3) akurasi 0.718 dan F1 0.376; terjadi perubahan akurasi sebesar -0.260 dibanding S2. Penurunannya besar, artinya model sangat bergantung pada variabel tersebut.
+
+3) Fitur terpenting: S2 -> health_condition, cgpa, current_semester; S3 (tanpa variabel dominan) -> per_month_cost, cgpa, current_semester. Lihat aturan keputusan pada outputs/aturan_keputusan_S3.txt.
+
+4) Penanganan kelas: recall kelas depresi S2 = 0.949 vs S4 (class_weight balanced) = 0.949; F1 S4 = 0.890. S4 tidak meningkatkan recall secara berarti.

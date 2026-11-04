@@ -1,0 +1,31 @@
+|--- health_condition <= 0.50
+|   |--- class: 1
+|--- health_condition >  0.50
+|   |--- health_condition <= 1.50
+|   |   |--- cgpa <= 2.98
+|   |   |   |--- good_friend_circle <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- good_friend_circle >  0.50
+|   |   |   |   |--- relationship_status <= 0.50
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- relationship_status >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- cgpa >  2.98
+|   |   |   |--- current_semester <= 5.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- current_semester >  5.50
+|   |   |   |   |--- cgpa <= 3.50
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- cgpa >  3.50
+|   |   |   |   |   |--- class: 0
+|   |--- health_condition >  1.50
+|   |   |--- good_friend_circle <= 0.50
+|   |   |   |--- cgpa <= 3.75
+|   |   |   |   |--- health_condition <= 2.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- health_condition >  2.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- cgpa >  3.75
+|   |   |   |   |--- class: 0
+|   |   |--- good_friend_circle >  0.50
+|   |   |   |--- class: 0

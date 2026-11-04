@@ -1,0 +1,5 @@
+Skenario,Accuracy,Precision,Recall,F1,ROC-AUC,Catatan
+S1 Default (semua fitur),0.9425,0.8866,0.8776,0.8821,0.9206,kedalaman=12
+S2 Tuning+Pruning (semua fitur),0.9775,0.9588,0.949,0.9538,0.9688,"{'clf__ccp_alpha': 0.005, 'clf__criterion': 'entropy', 'clf__max_depth': 10, 'clf__min_samples_leaf': 1}"
+S3 Tanpa variabel dominan,0.7175,0.4096,0.3469,0.3757,0.5949,dibuang: health_condition
+S4 Class weight balanced,0.9425,0.8378,0.949,0.89,0.9619,"{'clf__ccp_alpha': 0.0, 'clf__criterion': 'entropy', 'clf__max_depth': 7, 'clf__min_samples_leaf': 10}"

@@ -1,0 +1,88 @@
+|--- cgpa <= 2.98
+|   |--- relationship_status <= 1.50
+|   |   |--- cgpa <= 2.35
+|   |   |   |--- cgpa <= 2.21
+|   |   |   |   |--- per_month_cost <= 14000.00
+|   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- per_month_cost >  14000.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- cgpa >  2.21
+|   |   |   |   |--- class: 0
+|   |   |--- cgpa >  2.35
+|   |   |   |--- gender <= 0.50
+|   |   |   |   |--- per_month_cost <= 9754.00
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- per_month_cost >  9754.00
+|   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- gender >  0.50
+|   |   |   |   |--- per_month_cost <= 5250.00
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- per_month_cost >  5250.00
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |--- relationship_status >  1.50
+|   |   |--- age <= 23.50
+|   |   |   |--- cgpa <= 2.85
+|   |   |   |   |--- per_month_cost <= 28201.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- per_month_cost >  28201.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- cgpa >  2.85
+|   |   |   |   |--- living_style <= 0.50
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- living_style >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- age >  23.50
+|   |   |   |--- current_semester <= 6.50
+|   |   |   |   |--- gender <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- gender >  0.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- current_semester >  6.50
+|   |   |   |   |--- class: 1
+|--- cgpa >  2.98
+|   |--- per_month_cost <= 11129.50
+|   |   |--- gender <= 0.50
+|   |   |   |--- relationship_status <= 1.50
+|   |   |   |   |--- current_semester <= 3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- current_semester >  3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- relationship_status >  1.50
+|   |   |   |   |--- current_semester <= 3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- current_semester >  3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |--- gender >  0.50
+|   |   |   |--- current_semester <= 9.50
+|   |   |   |   |--- cgpa <= 3.41
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- cgpa >  3.41
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- current_semester >  9.50
+|   |   |   |   |--- cgpa <= 3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- cgpa >  3.50
+|   |   |   |   |   |--- truncated branch of depth 4
+|   |--- per_month_cost >  11129.50
+|   |   |--- current_semester <= 5.50
+|   |   |   |--- relationship_status <= 0.50
+|   |   |   |   |--- per_month_cost <= 11153.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- per_month_cost >  11153.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- relationship_status >  0.50
+|   |   |   |   |--- current_semester <= 3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- current_semester >  3.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |--- current_semester >  5.50
+|   |   |   |--- gender <= 0.50
+|   |   |   |   |--- per_month_cost <= 15052.00
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- per_month_cost >  15052.00
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- gender >  0.50
+|   |   |   |   |--- current_semester <= 7.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- current_semester >  7.50
+|   |   |   |   |   |--- truncated branch of depth 6
